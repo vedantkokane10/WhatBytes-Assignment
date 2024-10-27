@@ -1,0 +1,31 @@
+body{
+    border-right: solid 1px;
+    border-color: #EDF2F3;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px;
+    border-color: #EDF2F3;
+    margin-top: 50px;
+    padding-bottom: 0px;
+}
+
+.sidebar-button{
+    width: 150px;
+    height: 45px;
+    border-top-right-radius: 25px; ;
+    border-bottom-right-radius: 25px; ;
+    border: none;
+    background-color: white;
+}
+
+.sidebar-button.active {
+    background-color: #F6F7F9;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    
+}
