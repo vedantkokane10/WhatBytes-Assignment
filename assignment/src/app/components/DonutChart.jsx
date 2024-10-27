@@ -18,13 +18,13 @@ const DonutChart = () => {
   };
 
   const options = {
-    cutout: '70%',
+    cutout: '80%',
     plugins: {
       legend: { display: false },
     },
   };
 
-  return <Doughnut data={data} options={options} width={200} height={200}  />;
+  return <Doughnut data={data} options={options} width={20} height={10}  />;
 };
 
 export default DonutChart;

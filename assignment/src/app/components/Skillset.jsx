@@ -26,7 +26,7 @@ export const Skillset = () => {
   };
   return (
     <div className='skillset'>
-        <h4 style={{color:'black'}}>Skill set</h4>
+        <h4 style={{color:'black', fontWeight:'bold'}}>Skill set</h4>
         <div className='main-section'>
           <div className='left-section'>
             <div className='add-skill'>
@@ -89,7 +89,7 @@ export const Skillset = () => {
 
             <div className='right-section'>
                 <ProgressBars />
-                <h5 style={{ fontWeight: 'bold' }}>Syllabus Wise Analysis</h5>
+                <h5 style={{ fontWeight: 'bold' }}>Question Analysis</h5>
                 <DonutChart />
             </div>
 

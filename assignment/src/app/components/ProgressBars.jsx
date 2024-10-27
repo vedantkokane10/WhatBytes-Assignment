@@ -11,22 +11,24 @@ const ProgressBars = () => {
 
   return (
     <div className="space-y-4">
-      <h5 style={{ fontWeight: 'bold' }}>Syllabus Wise Analysis</h5>
-      {skills.map((skill) => (
-        <div key={skill.name} className="space-y-1">
-          <div className="flex justify-between text-gray-700 font-medium">
-            <span>{skill.name}</span>
-            <span>{skill.value}%</span>
-          </div>
-          <div className="w-half bg-gray rounded-full ">
-            <div
-              className={`${skill.color} h-2 rounded-full transition-all duration-300`}
-              style={{ width: `${skill.value}%` }}
-            ></div>
-          </div>
+    <h5 style={{ fontWeight: 'bold' }}>Syllabus Wise Analysis</h5>
+    {skills.map((skill) => (
+      <div key={skill.name} className="space-y-1">
+        <div className="flex justify-between text-gray-700 font-medium">
+          <span>{skill.name}</span>
+          <span>{skill.value}%</span>
         </div>
-      ))}
-    </div>
+        {/* Increase the bar width */}
+        <div className="w-full max-w-lg bg-gray-200 rounded-full">
+          <div
+            className={`${skill.color} h-2 rounded-full transition-all duration-300`}
+            style={{ width: `${skill.value}%` }}
+          ></div>
+        </div>
+      </div>
+    ))}
+  </div>
+
   );
 };
 
